@@ -1,0 +1,2 @@
+# static_website_design_for_Noor_education_of_learning
+static website using html and css
