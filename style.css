@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e0ece5;
+    
+}
+
+/* commen styling */
+section {
+    padding: 15px 5px;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+
+.about .title span, 
+.staff .title span,
+.lab .title span,
+.contact .title span {
+    border-bottom: 3px solid navy;
+}
+
+/* wnd of commen styling */
+
+/* navigation bar styling */
+.navbar .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+    width: 100%;
+    z-index: 999;
+    background-color: #e0ece5;
+    position: fixed;
+}
+
+.navbar .navbar-content .logo img {
+    height: 150px;
+    width: 150px;
+    background-color: #e0ece5;
+    border-radius: 20% 45% 50% 50%;
+}
+
+.navbar .navbar-content .logo img:hover {
+    height: 200px;
+    width: 200px;
+}
+
+.navbar .navbar-content .menu {
+    padding-right: 12px;
+}
+
+.navbar .navbar-content .menu li {
+    display: inline-block;
+    padding: 7px;
+    font-size: 20px;
+}
+
+.navbar .navbar-content .menu li a {
+    color: rgb(0, 160, 255);
+}
+
+.navbar .navbar-content .menu li a:hover {
+    border-bottom: 3px solid rgb(0, 160, 255);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navbar .background-img {
+    background-image: url(https://images.unsplash.com/photo-1603573355706-3f15d98cf100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aW5zdGl0dXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.navbar .bg-content {
+    background-color: rgb(218, 252, 241) ;
+    width: fit-content;
+}
+
+.navbar .background-img .bg-content .text {
+    text-align: center;
+    font-size: 40px;
+    color: #0509fc;
+}
+
+.navbar .background-img .bg-content p, h3 {
+    font-size: 18px;
+    text-align: center;
+    color: #0509fc;
+}
+/* end of navigation bar styling */
+
+/* about section styling */
+.about .about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .about-content .column-left {
+    width: 45%;
+    padding-left: 100px;
+}
+
+.about .about-content .column-left img {
+    width: 400px;
+    height: 450px;
+}
+
+.about .about-content .column-right {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.about .about-content .column-right .text {
+    font-size: 30px;
+    color: navy;
+}
+
+.about .about-content .column-right h4 {
+    font-size: 20px;
+}
+
+.about .about-content .column-right p {
+    font-size: 16px;
+    text-align: justify;
+}
+/* end of about section styling */
+
+/* staff section styling */
+.staff .staff-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.staff .staff-content .column-right img {
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid navy;
+    margin-top: 10px;
+}
+
+.staff .staff-content .column-left {
+    width: 55%;
+    padding-left: 30px;
+}
+
+.staff .staff-content .column-right {
+    width: 35%;
+    padding-right: 10 px;
+}
+
+.staff .staff-content .column-left p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.staff .staff-content .column-left .text {
+    font-size: 30px;
+    color: navy;
+}
+
+.staff .team .text1 {
+    font-size: 30px;
+    color: navy;
+    padding-left: 30px;
+}
+
+.team .team-members .card {
+    background: rgb(120, 195, 235);
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.team .team-members .card:hover {
+    background: rgb(137, 230, 172);
+}
+
+.team .team-members .card .box {
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .team-members .card:hover .box {
+    transform: scale(1.05);
+}
+
+.team .team-members .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.team .team-members .card .text2 {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.team .team-members .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(218, 252, 241)
+}
+
+.team .team-members .card:hover img {
+    border-color: navy;
+}
+/* end of staff section styling */
+
+/* lab section styling */
+.lab .lab-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 2 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.lab .lab-content img {
+    height: 600px;
+    width: 750px;
+    opacity: 0.8;
+}
+
+.lab .lab-content img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+/* end of lab section styling */
+
+/* contact section styling */
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+    width: calc(40% - 1px);
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: navy;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub_title {
+    color: navy;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .email {
+    margin-left: 10px;
+    
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button {
+    height: 47px;
+    width: 170px;
+}
+
+.contact .right form .button button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid navy;
+    background: navy;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact .right form .button button:hover {
+    color: navy;
+    background: none;
+    
+}
+/* end of contact section styling */
+
+/* footer section styling */
+footer {
+    background: rgb(120, 195, 235);
+    padding: 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: navy;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+/* end of footer section styling */
